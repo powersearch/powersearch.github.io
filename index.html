@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Engine</title>
+  <title>Power Search - Private Web </title>
   <style>
     
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
       margin: 0;
       padding: 0;
@@ -19,11 +19,16 @@
       background-color: #f9f9f9;
     }
 
+    .title{
+      font-size: xxx-large;
+    }
+
     .search-box {
       width: 50%;
       max-width: 600px;
       display: flex;
       flex-direction: column;
+      border-radius: 50px;
     }
 
     input[type="text"] {
@@ -33,6 +38,7 @@
       border-radius: 4px;
       font-size: 16px;
       box-sizing: border-box;
+      border-radius: 50px;
     }
 
     button {
@@ -44,6 +50,7 @@
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
+      border-radius: 50px;
     }
 
     button:hover {
@@ -53,18 +60,25 @@
     .powered-by {
       margin-top: 20px;
       font-size: 14px;
-      color: #666;
+      color: black;
     }
   </style>
 </head>
 <body>
    <h1 class="title">Power Search</h1>
+   <br>
+   <br>
+   <br>
   <div class="search-box">
-    <form action="https://www.google.com/search" method="get">
-      <input type="text" name="q" placeholder="Search">
-      <button type="submit">Search</button>
+    <form action="https://duckduckgo.com/" method="get">
+      <input type="text" name="q" placeholder="   Click to Search the Web" autocomplete="off">
+      <br>
+      <br>
+      <button type="submit">  Search  </button>
+      <br>
+      <br>
     </form>
   </div>
-  <div class="powered-by">Powered by Google</div>
+  <div class="powered-by">Powered by DuckDuckGo</div>
 </body>
 </html>
